@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komplex</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Elkerüljük a görgetést */
+        }
+
+        /* Animált mozaikos háttér sötétkék színekkel */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(45deg, #001f3d, #004080, #0066cc, #004080);
+            background-size: 400% 400%;
+            animation: gradientAnimation 4s ease infinite; /* Gyors animáció */
+            z-index: -1; /* A háttér alatt */
+        }
+
+        /* Kulcsanimáció a háttér színváltoztatásához */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Animált alakzatok a háttérben */
+        .shape {
+            position: absolute;
+            animation: shapeAnimation 6s ease-in-out infinite;
+            opacity: 0.8;
+        }
+
+        /* Háromszög */
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid rgba(255, 255, 255, 0.5);
+        }
+
+        /* Négyzet */
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Kör */
+        .circle {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+        }
+
+        /* Rombusz */
+        .diamond {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.5);
+            transform: rotate(45deg);
+        }
+
+        /* Háromszög */
+        .triangle2 {
+            width: 0;
+            height: 0;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 80px solid rgba(255, 255, 255, 0.5);
+        }
+
+        /* Négyzetek */
+        .square2 {
+            width: 120px;
+            height: 120px;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Kör más színben */
+        .circle2 {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+        }
+
+        /* Rombusz másik szín */
+        .diamond2 {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: rotate(45deg);
+        }
+
+        /* Másik háromszög */
+        .triangle3 {
+            width: 0;
+            height: 0;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+            border-bottom: 120px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Változó alakzat animáció */
+        @keyframes shapeAnimation {
+            0% {
+                opacity: 0.7;
+                transform: translateX(-100%) rotate(0deg);
+            }
+            25% {
+                opacity: 0.8;
+                transform: translateX(100%) rotate(90deg);
+            }
+            50% {
+                opacity: 0.6;
+                transform: translateY(-100%) rotate(180deg);
+            }
+            75% {
+                opacity: 0.9;
+                transform: translateY(100%) rotate(270deg);
+            }
+            100% {
+                opacity: 0.7;
+                transform: translateX(-100%) rotate(360deg);
+            }
+        }
+
+        /* Bemutatkozás szövege */
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            padding-top: 30px;
+        }
+
+        .content h2 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .content p {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Animált háttér -->
+    <div class="background"></div>
+
+    <!-- Változó alakzatok (10 különböző alakzat) -->
+    <div class="shape triangle" style="top: 20%; left: 10%;"></div>
+    <div class="shape square" style="top: 40%; left: 30%;"></div>
+    <div class="shape circle" style="top: 60%; left: 50%;"></div>
+    <div class="shape diamond" style="top: 80%; left: 70%;"></div>
+    <div class="shape triangle2" style="top: 10%; left: 80%;"></div>
+    <div class="shape square2" style="top: 20%; left: 50%;"></div>
+    <div class="shape circle2" style="top: 40%; left: 10%;"></div>
+    <div class="shape diamond2" style="top: 60%; left: 90%;"></div>
+    <div class="shape triangle3" style="top: 50%; left: 70%;"></div>
+    <div class="shape square" style="top: 90%; left: 20%;"></div>
+
+    <!-- Bemutatkozás szöveg -->
+    <div class="content">
+        <h2>Kötelező Komplex Természettudomány </h2>
+        <p><h1> Kötelező Komplex Természettudomány projektünk egy ppt készítése volt.Amit Csoportban kellett elvégeznünk.Egy Ókori filozófusról kellett írnunk,amiből a mi csoportunk Platón-t kapta.<h1 </p>
+        <br>
+<br>
+<br>
+
+
+<h2>Kép a projektemről!↓</h2>
+<!DOCTYPE html>
+<html lang="hu">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kép Példa</title>
+    <img src="" alt="" >
+    <br>
+    <br>
+<h2>A Projektről:</h2>
+<p><h1> Projektünk egy Ókori filozófusról való előadás tartása volt,ezt a projektet csoport munkában kellett elkészíteni,ami szerintem könyebb mint ha egyedül dolgoznál,mivel így több ember tud egy projekten dolgozni,így hamarabb elkészül a projekt és jobban eloszthatóak a feladatok.A mi csoportunk Platón-t kapta,itt nem volt megadva hogy hány diásnak kell lenie a PPT-nek,de a mienk 9 diából állt,animációkkal,áttűnésekkel ellátva.Viszonylag egy egyszerűbb PPT-ről van szó,de ettől függetlenül szerintem még jól néz ki.A Projektünket itt nézheti meg:↓!</h1></p>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görgethető oldal</title>
+    <style>
+        body {
+            height: 100%;  /* Az egész oldal magassága 100% */
+            overflow-y: scroll;  /* Függőleges görgetősáv mindig megjelenik */
+            margin: 0;  /* Eltávolítjuk a default margót */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komplex Projekt</title>
+    <style>
+        /* Gombok konténerének stílusa */
+        .gomb-kontener {
+            position: fixed; /* Fix pozicionálás */
+            bottom: 30px; /* 30px távolság a képernyő aljától */
+            left: 30px; /* 30px távolság a képernyő bal szélétől */
+            width: calc(100% - 60px); /* A konténer a képernyő szélességének 100%-a, minusz a bal és jobb margó */
+            display: flex;
+            justify-content: flex-start; /* A gombokat balra igazítjuk */
+        }
+
+        /* Vissza gomb stílusok */
+        .vissza-gomb {
+            background-color: grey; /* alap szürke háttér */
+            color: white; /* fehér szöveg */
+            border: none; /* nincs keret */
+            padding: 10px 20px; /* párnázás */
+            font-size: 16px; /* betűméret */
+            cursor: pointer; /* mutatja, hogy kattintható */
+            text-align: center; /* középre igazított szöveg */
+            border-radius: 5px; /* lekerekített sarkok */
+            transition: background-color 0.3s ease; /* sima átmenet a színváltozásra */
+            text-decoration: none; /* A link alapértelmezett aláhúzásának eltávolítása */
+        }
+
+        /* Amikor az egér rámutat */
+        .vissza-gomb:hover {
+            background-color: red; /* piros háttér hover esetén */
+        }
+
+        /* Tovább gomb stílusok */
+        .tovabb-gomb {
+            background-color: grey; /* alap szürke háttér */
+            color: white; /* fehér szöveg */
+            border: none; /* nincs keret */
+            padding: 10px 20px; /* párnázás */
+            font-size: 16px; /* betűméret */
+            cursor: pointer; /* mutatja, hogy kattintható */
+            text-align: center; /* középre igazított szöveg */
+            border-radius: 5px; /* lekerekített sarkok */
+            transition: background-color 0.3s ease; /* sima átmenet a színváltozásra */
+            margin-left: 20px; /* A Tovább gomb kicsit jobbra kerül a Vissza gombtól */
+            text-decoration: none; /* A link alapértelmezett aláhúzásának eltávolítása */
+        }
+
+        /* Amikor az egér rámutat */
+        .tovabb-gomb:hover {
+            background-color: green; /* zöld háttér hover esetén */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Gombok konténer -->
+<div class="gomb-kontener">
+    <!-- Vissza gomb, mely a tortenelem oldalra irányít -->
+    <a href="tortenelem.html" class="vissza-gomb">Vissza</a>
+    <!-- Tovább gomb, mely az IKT projekt oldalra irányít -->
+    <a href="ikt.html" class="tovabb-gomb">Tovább</a>
+</div>
+
+</body>
+</html>
+
+        
+    </div>
+</body>
+</html>
+
+</head>
+<body>
+
+    
+    
+
+</body>
+</html>
+
+<br>
+<br>
